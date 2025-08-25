@@ -6,20 +6,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-[#dde7f4] px-5 font-manrope">
+  <body class="bg-[#dde7f4] px-5 font-manrope relative">
+    <!-- <div
+      id="copy"
+      class="absolute bg-[#646978] px-8 py-3 rounded-2xl text-[#A6ACB5] top-1/2 left-1/2 -translate-x-1/2 opacity-0 transition-all"
+    >
+      Copied
+    </div> -->
+
     <article class="bg-white rounded-2xl">
       <img class="w-full rounded-t-2xl" src="images/drawers.jpg" />
-      <div class="p-8">
-        <h1 class="font-bold text-[#646978] text-[17px]">
+      <div class="">
+        <h1 class="font-bold text-[#646978] text-[17px] px-8 mt-8">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
         </h1>
-        <h2 class="text-[#A6ACB5] text-sm mt-4">
+        <h2 class="text-[#A6ACB5] text-sm mt-4 px-8 mb-5">
           Ever been in a room and felt like something was missing? Perhaps it
           felt slightly bare and uninviting. I´ve got some simple tips to help
           you make any room feel complete.
         </h2>
-        <div class="flex items-center justify-between mt-10">
+
+        <!-- footer -->
+        <div
+          id="footer1"
+          class="flex items-center justify-between px-8 py-[20px]"
+        >
           <div class="flex items-center">
             <img
               class="rounded-[100%] h-10 mr-5"
@@ -34,9 +46,49 @@
             </div>
           </div>
           <div
-            class="inline-block rounded-[100%] bg-[#cfd1d2] p-2 hover:bg-[#cbcccd] cursor-pointer"
+            id="share1"
+            class="inline-block rounded-[100%] bg-[#cfd1d2] p-2 hover:bg-[#cbcccd] cursor-pointer relative"
           >
             <img src="images/icon-share.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- footer share -->
+        <div
+          id="footer2"
+          class="items-center justify-between px-8 py-[27px] rounded-b-2xl bg-[#48556A] w-full hidden"
+        >
+          <div class="flex items-center">
+            <span class="tracking-[0.2rem] text-[#6C798E] text-sm">SHARE</span>
+            <div class="flex ml-5">
+              <a target="_blank" href="https://www.facebook.com/">
+                <img
+                  class="share2"
+                  src="images/icon-facebook.svg"
+                  alt="facebook-icon"
+              /></a>
+
+              <a target="_blank" href="https://www.x.com/">
+                <img
+                  class="mx-5 share2"
+                  src="images/icon-twitter.svg"
+                  alt="twitter-icon"
+              /></a>
+
+              <a target="_blank" href="https://www.instagram.com/">
+                <img
+                  class="share2"
+                  src="images/icon-pinterest.svg"
+                  alt="pinterest-icon"
+              /></a>
+            </div>
+          </div>
+
+          <!-- id = "share3" -->
+          <div
+            class="inline-block rounded-[100%] bg-[#718197] p-2 hover:bg-[#77869c] cursor-pointer relative share2"
+          >
+            <img src="images/icon-share-white.svg" alt="" />
           </div>
         </div>
       </div>
