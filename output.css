@@ -2737,6 +2737,14 @@ video {
   .desktop\:max-w-\[750px\]{
     max-width: 750px;
   }
+
+  .desktop\:rounded-tr-none{
+    border-top-right-radius: 0px;
+  }
+
+  .desktop\:rounded-bl-2xl{
+    border-bottom-left-radius: 1rem;
+  }
 }
 
 @media (prefers-color-scheme: dark){
