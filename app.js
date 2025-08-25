@@ -23,12 +23,11 @@ for (let i = 0; i < share2.length; i++) {
 
 for (let i = 0; i < share2desktop.length; i++) {
   share2desktop[i].addEventListener("click", () => {
-    shareDesktop.classList.add("hidden");
-    shareDesktop.classList.remove("flex");
+    shareDesktop.classList.toggle("hidden");
   });
 }
 
 shareDesktopButton.addEventListener("click", () => {
-  shareDesktop.classList.toggle("flex");
+  //   shareDesktop.classList.toggle("flex");
   shareDesktop.classList.toggle("hidden");
 });
