@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="bg-[#dde7f4] px-5 font-manrope relative">
-    <!-- <div
-      id="copy"
-      class="absolute bg-[#646978] px-8 py-3 rounded-2xl text-[#A6ACB5] top-1/2 left-1/2 -translate-x-1/2 opacity-0 transition-all"
+    <article
+      class="bg-white rounded-2xl max-w-[560px] min-w-[350px] desktop:flex desktop:w-[750px] desktop:max-w-[750px]"
     >
-      Copied
-    </div> -->
-
-    <article class="bg-white rounded-2xl">
-      <img class="w-full rounded-t-2xl" src="images/drawers.jpg" />
-      <div class="">
+      <img
+        class="w-full desktop:w-[300px] rounded-t-2xl rounded-tr-none rounded-bl-2xl"
+        src="images/drawers.jpg"
+      />
+      <div>
         <h1 class="font-bold text-[#646978] text-[17px] px-8 mt-8">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
@@ -30,7 +28,7 @@
         <!-- footer -->
         <div
           id="footer1"
-          class="flex items-center justify-between px-8 py-[20px]"
+          class="flex items-center justify-between px-8 py-[20px] desktop:hidden"
         >
           <div class="flex items-center">
             <img
@@ -47,7 +45,7 @@
           </div>
           <div
             id="share1"
-            class="inline-block rounded-[100%] bg-[#cfd1d2] p-2 hover:bg-[#cbcccd] cursor-pointer relative"
+            class="inline-block rounded-[100%] bg-[#cfd1d2] p-2 hover:bg-[#cbcccd] cursor-pointer relative desktop:hidden"
           >
             <img src="images/icon-share.svg" alt="" />
           </div>
@@ -56,7 +54,7 @@
         <!-- footer share -->
         <div
           id="footer2"
-          class="items-center justify-between px-8 py-[27px] rounded-b-2xl bg-[#48556A] w-full hidden"
+          class="items-center justify-between px-8 py-[27px] rounded-b-2xl bg-[#48556A] w-full hidden desktop:hidden"
         >
           <div class="flex items-center">
             <span class="tracking-[0.2rem] text-[#6C798E] text-sm">SHARE</span>
@@ -84,11 +82,78 @@
             </div>
           </div>
 
-          <!-- id = "share3" -->
           <div
             class="inline-block rounded-[100%] bg-[#718197] p-2 hover:bg-[#77869c] cursor-pointer relative share2"
           >
             <img src="images/icon-share-white.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- desktop footer -->
+        <div
+          class="items-center justify-between px-8 py-[20px] hidden desktop:flex"
+        >
+          <div class="flex items-center">
+            <img
+              class="rounded-[100%] h-10 mr-5"
+              src="images/avatar-michelle.jpg"
+              alt=""
+            />
+            <div>
+              <h2 class="text-sm font-bold text-[#646978]">
+                Michelle Appleton
+              </h2>
+              <span class="text-[#A6ACB5] text-sm">28 Jun 2020</span>
+            </div>
+          </div>
+          <div
+            class="rounded-[100%] bg-[#cfd1d2] p-2 hover:bg-[#cbcccd] cursor-pointer relative hidden desktop:inline-block"
+          >
+            <div
+              class="flex flex-col absolute items-center -left-[88px] -top-[60px]"
+            >
+              <!-- content desktop -->
+              <div
+                id="share-desktop"
+                class="flex flex-col items-center justify-center"
+              >
+                <div
+                  class="flex items-center justify-center bg-[#48556E] w-[210px] h-[40px] rounded-2xl"
+                >
+                  <span class="tracking-[0.2rem] text-[#6C798E] text-[12px]"
+                    >SHARE</span
+                  >
+                  <div class="flex ml-5 share2desktop">
+                    <a target="_blank" href="https://www.facebook.com/">
+                      <img
+                        class="w-4"
+                        src="images/icon-facebook.svg"
+                        alt="facebook-icon"
+                    /></a>
+
+                    <a target="_blank" href="https://www.x.com/">
+                      <img
+                        class="mx-5 w-4 share2desktop"
+                        src="images/icon-twitter.svg"
+                        alt="twitter-icon"
+                    /></a>
+
+                    <a target="_blank" href="https://www.instagram.com/">
+                      <img
+                        class="w-4 share2desktop"
+                        src="images/icon-pinterest.svg"
+                        alt="pinterest-icon"
+                    /></a>
+                  </div>
+                </div>
+
+                <div
+                  class="w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-t-[10px] border-[#48556E]"
+                ></div>
+              </div>
+            </div>
+
+            <img id="share-desktop-button" src="images/icon-share.svg" alt="" />
           </div>
         </div>
       </div>
